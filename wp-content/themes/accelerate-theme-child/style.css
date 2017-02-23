@@ -49,3 +49,33 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/* Case Study Styles*/
+
+aside.case-study-sidebar {
+	float:left;
+	width:400px;
+	margin-right: 40px;
+}
+
+div.case-study-imgs {
+	float: right;
+	width: 400px;
+	clear: both;
+	margin-top: -320px;
+	margin-right: 90px;
+}
+
+.case_imgs{
+	margin-bottom: 20px;
+}
+
+p.info {
+	color: #D3D3D3;
+	margin-bottom: 10px;
+}
+
+p.client {
+	margin-bottom: 24px;
+	font-weight: bold;
+}
