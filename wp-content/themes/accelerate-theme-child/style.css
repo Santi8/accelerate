@@ -79,3 +79,9 @@ p.client {
 	margin-bottom: 24px;
 	font-weight: bold;
 }
+
+/*single case study image fix*/
+
+img {
+	padding-top: 400px;
+}
