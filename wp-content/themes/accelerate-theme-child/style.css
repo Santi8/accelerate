@@ -52,6 +52,10 @@
 
 /* Case Study Styles*/
 
+article.case-study {
+
+}
+
 aside.case-study-sidebar {
 	float:left;
 	width:400px;
@@ -61,9 +65,10 @@ aside.case-study-sidebar {
 div.case-study-imgs {
 	float: right;
 	width: 400px;
-	clear: both;
-	margin-top: -320px;
+	/*clear: both;*/
+	/*margin-top: -320px;*/
 	margin-right: 90px;
+	padding-bottom: 20px;
 }
 
 .case_imgs{
@@ -80,8 +85,34 @@ p.client {
 	font-weight: bold;
 }
 
-/*single case study image fix*/
+/*Front page styling*/
 
-/*img {
-	padding-top: 400px;
+.homepage-featured-work li {
+	display: inline-block;
+	width: 31%;
+	margin-right: 3%;
+}
+
+/*remove margin from rightmost list item*/
+.homepage-featured-work li:last-child {
+	margin-right: 0;
+}
+
+
+
+
+/*article.case-study {
+	overflow: auto;
+}*/
+
+/*ul.homepage-featured-work {
+	align-content: center;
+	display: inline;
+	float: left;
+}
+
+li.individual-featured-work{
+	align-content: center;
+	display: inline-block;
+	float: left;
 }*/

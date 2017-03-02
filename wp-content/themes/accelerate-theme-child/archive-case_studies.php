@@ -16,6 +16,8 @@ get_header(); ?>
 				$size = "full";
 				$services = get_field('services');
 			?>
+
+			<article class="case-study">
 			<aside class="case-study-sidebar">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<p class="info"><?php echo $services; ?></p>
@@ -24,6 +26,7 @@ get_header(); ?>
 
 				<p><a href="<?php the_permalink(); ?>">View Project</a></p>
 			</aside><!-- end aside bar-->
+			</article><!--closes and groups the images together-->
 
 			<div class="case-study-imgs">
 				<?php if($image_1) { ?>
