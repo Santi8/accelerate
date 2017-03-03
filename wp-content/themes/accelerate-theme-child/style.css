@@ -53,20 +53,21 @@
 /* Case Study Styles*/
 
 article.case-study {
-
+	margin-top: 60px;
 }
 
 aside.case-study-sidebar {
 	float:left;
 	width:400px;
 	margin-right: 40px;
+	/*margin-bottom: 150px;*/
 }
 
 div.case-study-imgs {
 	float: right;
 	width: 400px;
 	margin-right: 90px;
-	padding-bottom: 10px;
+	margin-bottom: 70px;
 }
 
 .case_imgs{
@@ -98,5 +99,5 @@ p.client {
 
 li h3 {
 	text-align: center;
-	margin-top: 3px;
+	margin-top: 10px;
 }

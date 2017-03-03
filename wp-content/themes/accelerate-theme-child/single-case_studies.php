@@ -34,7 +34,7 @@ get_header(); ?>
 
 				<?php the_content(); ?>
 
-				<p><a href="<?php echo $link; ?>">Site Link</a></p>
+				<p><a href="<?php echo $link; ?>">View Site</a></p>
 			</aside><!-- end aside bar-->
 			</article><!--closes and groups the images together-->
 
