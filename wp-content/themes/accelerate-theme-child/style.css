@@ -65,10 +65,8 @@ aside.case-study-sidebar {
 div.case-study-imgs {
 	float: right;
 	width: 400px;
-	/*clear: both;*/
-	/*margin-top: -320px;*/
 	margin-right: 90px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .case_imgs{
@@ -98,21 +96,7 @@ p.client {
 	margin-right: 0;
 }
 
-
-
-
-/*article.case-study {
-	overflow: auto;
-}*/
-
-/*ul.homepage-featured-work {
-	align-content: center;
-	display: inline;
-	float: left;
+li h3 {
+	text-align: center;
+	margin-top: 3px;
 }
-
-li.individual-featured-work{
-	align-content: center;
-	display: inline-block;
-	float: left;
-}*/

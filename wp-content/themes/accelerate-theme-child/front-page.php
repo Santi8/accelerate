@@ -39,13 +39,13 @@ get_header(); ?>
 					$image_1 = get_field("image_1");
 					$size = "medium";
 				?>
-				</li class="individual-featured-work">
+				<li class="individual-featured-work">
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
 					</figure>
-				</li>
-
+					
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+				</li>
 
 				<?php endwhile; // end of loop ?>
 	<?php wp_reset_query(); // resets the altered query back to the original ?>
