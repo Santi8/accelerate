@@ -41,6 +41,7 @@ get_header(); ?>
 				?>
 				<li class="individual-featured-work">
 					<figure>
+						<a href="<?php the_permalink(); ?>"><!--adding link to images-->
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
 					</figure>
 					
