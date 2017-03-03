@@ -58,13 +58,12 @@ article.case-study {
 
 aside.case-study-sidebar {
 	float:left;
-	width:400px;
-	margin-right: 40px;
-	/*margin-bottom: 150px;*/
+	width: 325px;
+	margin-right: 55px;
 }
 
 div.case-study-imgs {
-	float: right;
+	float: left;
 	width: 400px;
 	margin-right: 90px;
 	margin-bottom: 70px;
@@ -84,6 +83,10 @@ p.client {
 	font-weight: bold;
 }
 
+img {
+	 margin-bottom: 60px;
+}
+
 /*Front page styling*/
 
 .homepage-featured-work li {
@@ -101,3 +104,9 @@ li h3 {
 	text-align: center;
 	margin-top: 10px;
 }
+
+
+.button {
+	background: none repeat scroll 0 0 #45ac9d;
+}
+

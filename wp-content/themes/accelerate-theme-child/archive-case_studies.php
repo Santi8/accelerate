@@ -26,15 +26,16 @@ get_header(); ?>
 
 				<p><a href="<?php the_permalink(); ?>">View Project</a></p>
 			</aside><!-- end aside bar-->
-		</article><!--closes and groups the images together-->
-		<div class="case-study-imgs">
+
+			<div class="case-study-imgs">
 			<a href="<?php the_permalink(); ?>">
 			<?php if($image_1) { ?>
 				<?php echo wp_get_attachment_image( $image_1, $size ); ?>
 			<?php } ?>
 			</a>
 		</div><!--end case-study-div-->
-			
+		</article><!--closes and groups the images together-->
+		
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- #content -->
 </div><!-- #primary -->

@@ -27,36 +27,33 @@ get_header(); ?>
 
 			?>
 			<article class="case-study">
-			<aside class="case-study-sidebar">
-				<h2><?php the_title(); ?></h2>
-				<p class="info"><?php echo $services; ?></p>
-				<p class="client">Client: <?php echo $client; ?></p>
+				<aside class="case-study-sidebar">
+					<h2><?php the_title(); ?></h2>
+					<p class="info"><?php echo $services; ?></p>
+					<p class="client">Client: <?php echo $client; ?></p>
 
-				<?php the_content(); ?>
+					<?php the_content(); ?>
 
-				<p><a href="<?php echo $link; ?>">View Site</a></p>
-			</aside><!-- end aside bar-->
+					<p><a href="<?php echo $link; ?>">View Site</a></p>
+				</aside><!-- end aside bar-->
+
+				<div class="case-study-imgs">
+					<?php if($image_1) { ?>
+
+						<?php echo wp_get_attachment_image( $image_1, $size ); ?>
+					<?php } ?>
+
+					<?php if($image_2) { ?>
+
+						<?php echo wp_get_attachment_image( $image_2, $size ); ?>	
+					<?php } ?>
+
+					<?php if($image_3) { ?>
+						<?php echo wp_get_attachment_image( $image_2, $size ); ?>
+					<?php } ?>
+				</div><!--end case-study-div-->
 			</article><!--closes and groups the images together-->
 
-			<div class="case-study-imgs">
-				<?php if($image_1) { ?>
-
-					<?php echo wp_get_attachment_image( $image_1, $size ); ?>
-					<!--<img src="<?php //echo $image_1; ?>" class="case_imgs"/>-->
-				<?php } ?>
-
-				<?php if($image_2) { ?>
-
-					<?php echo wp_get_attachment_image( $image_2, $size ); ?>
-					<!--<img src="<?php //echo $image_2; ?>" class="case_imgs"/>-->
-				<?php } ?>
-
-				<?php if($image_3) { ?>
-					<?php echo wp_get_attachment_image( $image_2, $size ); ?>
-					<!--<img src="<?php //echo $image_3; ?>" class="case_imgs"/>-->
-				<?php } ?>
-			</div><!--end case-study-div-->
-			
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
