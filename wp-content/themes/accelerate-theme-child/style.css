@@ -115,8 +115,51 @@ li h3 {
 	margin-top: -50px
 }
 
-
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
+/* contact form adjustments */
+
+div#content.contact {
+	margin-right: auto;
+    margin-left: auto;
+    width: 690px;
+}
+
+div#nf-form-1-cont.nf-form-cont {
+	margin-right: auto;
+    margin-left: auto;
+    width: 690px;
+}
+
+.field-wrap.textbox-wrap {
+	float: left;
+	width: 335px;
+}
+
+.field-wrap.email-wrap {
+	float: right;
+	margin-top: -93px;
+	width: 335px;
+}
+
+.field-wrap input[type="submit"], .field-wrap input[type="button"], .field-wrap button {
+	float: right;
+	width: 200px !important;
+    height: 50px;
+    background-color: #45ac9d;
+    font-family: 'Montserrat';
+	font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.field-wrap input[type="submit"], .field-wrap input[type="button"], .field-wrap button {
+    min-width: 0; 
+}
+
+.nf-field-label label {
+	font-family: 'Montserrat';
+	font-size: 14px;
+}
