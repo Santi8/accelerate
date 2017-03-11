@@ -25,7 +25,7 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
-<!--starts homwe page images-->
+<!--starts home page images-->
 
 <section class="featured-work">
 	<div class="site-content">

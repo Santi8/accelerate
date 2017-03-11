@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for About page.
+ * The template for display for the About Page
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
@@ -9,28 +9,47 @@
 
 get_header(); ?>
 
-<section class="about-page">
-	<div class="site-content-about">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-				<?php the_content(); ?>
+<section class="home-page">
+	<div class="site-content">
+		<?php while ( have_posts() ) : the_post(); 
+
+			$description = get_field('services');
+			$image_1 = get_field('image_1');
+			$size = "full";
+		?>
+
+		<div class='homepage-hero'>
 				<article class="about-info"><span>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</article>
-			</div>	
+			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
-</section><!-- .about-page -->
+</section><!-- .home-page -->
+			
+<section class="about">
 
+	<h2 class="services">Our Services</h2>
+	<p class="about-info">We take pride in our clients and the content we create for them. <br> Here's a brief overview of our offered services. </p>
+			<article class="description">
+				<aside class="service-description">
+					<!--<h2><?php //the_title(); ?></h2>-->
+					<p class="info-about"><?php echo $description; ?></p>
+						<?php the_content(); ?>
 
+				</aside>
+				<div class="single-image">
+					<?php if($image_1) { ?>
+						<?php echo wp_get_attachment_image( $image_1, $size ); ?>
+					<?php } ?>
+				</div>
+			</article>
+</section><!--end of about section-->
 
-
-<div id="primary" class="site-content">
-		<div id="content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<h2><?php the_title(); ?></h2>
-				<?php the_content(); ?>
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
