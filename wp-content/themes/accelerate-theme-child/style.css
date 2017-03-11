@@ -193,3 +193,18 @@ h2.services {
 p.about-info {
 	text-align: center;
 }
+
+
+/* 404 page styling */
+
+.not-found {
+	font-family: 'Vast Shadow', cursive;
+	color: #45ac9d;
+}
+
+.failure {
+	font-family: 'Vast Shadow', cursive;
+	font-size: 40px;
+	color: #45ac9d;
+}
+

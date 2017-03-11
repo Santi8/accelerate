@@ -13,7 +13,7 @@ get_header(); ?>
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); 
 
-			$description = get_field('services');
+			$description = get_field('description');
 			$image_1 = get_field('image_1');
 			$size = "full";
 		?>
