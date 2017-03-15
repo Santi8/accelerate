@@ -200,11 +200,36 @@ p.about-info {
 .not-found {
 	font-family: 'Vast Shadow', cursive;
 	color: #45ac9d;
+	float: left;
+	margin-top: 60px;
 }
 
 .failure {
 	font-family: 'Vast Shadow', cursive;
 	font-size: 40px;
 	color: #45ac9d;
+	float: right;
+	clear: both;
+	width: 500px;
 }
 
+/* Twitter Modjule */
+
+
+.widget {
+    font-size: 0.83em;
+    font-weight: 600;
+    padding: 0 40px;
+    position: absolute;
+    float: right;
+    margin-left: 500px;
+    margin-top: -300px;
+    margin-right: 200px;
+}
+
+.widget-title {
+    color: #45ac9d;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 20px 0 5px;
+}

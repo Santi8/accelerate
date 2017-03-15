@@ -11,10 +11,17 @@ get_header(); ?>
 
 <section class="home-page">
 	<div class="site-content">
+	<?php query_posts('posts_per_page=3&post_type=services'); ?> <!--added this code to see if it would help, hasn't-->
 		<?php while ( have_posts() ) : the_post(); 
 
-			$description = get_field('description');
+			$description_1 = get_field('description_1');
+			$description_2 = get_field('description_2');
+			$description_3 = get_field('description_3');
+			$description_4 = get_field('description_4');
 			$image_1 = get_field('image_1');
+			$image_2 = get_field('image_2');
+			$image_3 = get_field('image_3');
+			$image_4 = get_field('image_4');
 			$size = "full";
 		?>
 

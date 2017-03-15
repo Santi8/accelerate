@@ -69,6 +69,13 @@ get_header(); ?>
 				<?php endwhile; // end of loop ?>
 			<?php wp_reset_query();  // resets the altered query back to the original ?>
 
+			<!--dynamic sidebar coming up-->
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+			<?php endif; ?><!--end of dynamic sidebar-->
+
 		</div>
 	</div>
 </section>
