@@ -216,7 +216,7 @@ p.about-info {
 /* Twitter Modjule */
 
 
-.widget {
+.home .widget {
     font-size: 0.83em;
     font-weight: 600;
     padding: 0 40px;
@@ -227,7 +227,7 @@ p.about-info {
     margin-right: 200px;
 }
 
-.widget-title {
+.home .widget-title {
     color: #45ac9d;
     font-size: 1em;
     font-weight: 600;
