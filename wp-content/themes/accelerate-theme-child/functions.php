@@ -57,7 +57,7 @@ register_post_type( 'services',
         array(
             'labels' => array(
                 'name' => __( 'Services' ),
-                'singular_name' => __( 'Service' )
+                //'singular_name' => __( 'Service' )
             ),
             'public' => true,
             'has_archive' => false,

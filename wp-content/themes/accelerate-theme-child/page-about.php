@@ -16,7 +16,7 @@ get_header(); ?>
 </section><!-- .home-page -->
 
 <div class="site-content">
-		<h2 class="services">Our Services</h2>
+		<!--<h2 class="services">Our Services</h2>-->
 		<p class="about-info">We take pride in our clients and the content we create for them. <br> Here's a brief overview of our offered services. </p>
 
 <section class="about">
@@ -38,7 +38,7 @@ get_header(); ?>
 
 		<article class="description">
 				<aside class="service-description">
-					<!--<h2><?php //the_title(); ?></h2>-->
+					<h2 class="our-services"><?php the_title(); ?></h2>
 				<p class="info-about"><?php echo $description_1; ?></p>
 
 
